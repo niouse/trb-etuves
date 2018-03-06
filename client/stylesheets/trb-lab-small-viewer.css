@@ -1,0 +1,30 @@
+.small-viewer-borders {
+  fill: transparent;
+  stroke-dasharray:  30 1600;
+  stroke-dashoffset: -990;
+  stroke-width: 8px;
+  /*stroke-linecap : round;*/
+  stroke: #cd3a35;
+}
+
+.small-viewer-borders:hover  {
+  -webkit-animation: 0.3s borders linear forwards;
+  animation: 0.3s borders linear forwards;
+/* animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;*/
+}
+
+@keyframes borders {
+  0% {
+    stroke-dasharray:  30 1600;
+	  stroke-dashoffset: 70;
+	  stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 1600 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+}

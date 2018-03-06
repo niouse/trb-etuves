@@ -1,0 +1,258 @@
+
+.svg-wrapper {
+  height: 220px;
+  width : 220px;
+  margin: 0 auto;
+  cursor : pointer;
+  position : relative
+}
+
+.shape:active { fill: black; }
+
+.shape {
+  fill: transparent;
+  stroke-dasharray:  650 0;
+  stroke-dashoffset: 0;
+  stroke-width: 1px;
+  stroke: #cd3a35;
+   display : flex;
+  justify-content : center;
+  align-items : center;
+  position : relative;
+}
+
+.text {
+  color: #cd3a35;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  text-align : center;
+  width : 200px;
+  position: absolute;
+  top: 99px;
+  left : 10px;
+  margin : auto
+}
+
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 650 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+  100% {
+    stroke-dasharray: 100 100;
+    stroke-dashoffset: 0;
+    stroke-width: 8px;
+	filter:url(#blurMe);
+  }
+}
+
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.3s draw linear forwards;
+  animation: 0.3s draw linear forwards;
+/* animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;*/
+}
+
+
+
+
+
+
+
+.recording {
+  height: 220px;
+  width : 220px;
+  margin: 0 auto;
+  cursor : pointer;
+  position : relative;
+	 
+}
+
+.startText {
+  color: #cd3a35;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  text-align : center;
+  width : 200px;
+  position: absolute;
+  top: 99px;
+  left : 10px;
+  margin : auto
+}
+
+
+@keyframes recording {
+  0% {
+    stroke-dasharray: 105 105;
+    stroke-dashoffset: 900;
+    stroke-width: 8px;
+	  filter:url(#blurMe);
+  }
+  50% {
+    stroke-dasharray: 175 35;
+    stroke-dashoffset: 0;
+    stroke-width: 8px;
+	  filter:url(#blurMe);
+  }
+  100% {
+    stroke-dasharray: 105 105;
+    stroke-dashoffset: 900;
+    stroke-width: 8px;
+	  filter:url(#blurMe);
+  }
+}
+
+.recording .shape {
+	stroke: green;
+  -webkit-animation: 10s recording linear forwards;
+  animation: 10s recording linear forwards;
+  animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+}
+
+.recording .text {
+	stroke: green;
+	color: green;
+}
+
+
+
+.svg-wrapper-small {
+  height: 140px;
+  width : 140px;
+  margin: 0 auto;
+  cursor : pointer;
+  position : relative
+}
+
+.shape-small:active { fill: black; }
+
+.shape-small {
+  fill: transparent;
+  stroke-dasharray:  410 0;
+  stroke-dashoffset: 0;
+  stroke-width: 1px;
+  stroke: #cd3a35;
+   display : flex;
+  justify-content : center;
+  align-items : center;
+  position : relative;
+}
+
+.text-small {
+  color: #cd3a35;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  text-align : center;
+  width : 100%;
+  position: absolute;
+  top: 59px;
+  left : 0px;
+  margin : auto;
+  //border : 1px solid red
+}
+
+
+@keyframes drawSmall {
+  0% {
+    stroke-dasharray: 410 0;
+    stroke-dashoffset: 0;
+    stroke-width: 1px;
+  }
+  100% {
+    stroke-dasharray: 67 67;
+    stroke-dashoffset: 0;
+    stroke-width: 8px;
+	filter:url(#blurMe);
+  }
+}
+
+
+.svg-wrapper-small:hover .shape-small {
+  -webkit-animation: 0.3s drawSmall linear forwards;
+  animation: 0.3s drawSmall linear forwards;
+/* animation-iteration-count: infinite;
+-moz-animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+-o-animation-iteration-count: infinite;*/
+}
+
+
+
+
+
+
+
+.recording-small {
+  height: 140px;
+  width : 140px;
+  margin: 0 auto;
+  cursor : pointer;
+  position : relative;
+}
+
+.startText-small {
+  color: #cd3a35;
+  font-family: 'Roboto Condensed';
+  font-size: 22px;
+  letter-spacing: 8px;
+  line-height: 32px;
+  text-align : center;
+  width : 142px;
+  position: absolute;
+  top: 99px;
+  left : 30px;
+  margin : auto
+}
+
+
+@keyframes recordingSmall {
+  0% {
+    stroke-dasharray: 67 67;
+    stroke-dashoffset: 900;
+    stroke-width: 8px;
+	  filter:url(#blurMe);
+  }
+  50% {
+    stroke-dasharray: 27 107;
+    stroke-dashoffset: 0;
+    stroke-width: 8px;
+	  filter:url(#blurMe);
+  }
+  100% {
+    stroke-dasharray: 67 67;
+    stroke-dashoffset: 900;
+    stroke-width: 8px;
+	  filter:url(#blurMe);
+  }
+}
+
+.recording-small .shape-small {
+	stroke: green;
+  -webkit-animation: 10s recordingSmall linear forwards;
+  animation: 10s recordingSmall linear forwards;
+  animation-iteration-count: infinite;
+	-moz-animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+	-o-animation-iteration-count: infinite;
+}
+
+.recording-small .text-small {
+	stroke: green;
+	color: green;
+}
+
+
